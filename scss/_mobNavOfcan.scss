@@ -1,0 +1,104 @@
+.mob_header{
+    padding: 5px 0;
+    background-color:white;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 8;
+    box-shadow: 1px 1.732px 20px 0px rgba(0,0,0,0.3);   
+    .mobNAv_btn{
+      text-align: end;
+      a{
+        i{
+          padding: 5px 20px;
+          font-size: 30px;
+          color: $black;
+        }
+      }
+    }
+}
+.mobNewHeader{
+    position: fixed;
+    top: 40px;
+    width: 100%;
+}
+.navbar_toggoler{
+    .offcanvas {
+      z-index: 999999;
+        .offcanvas-header{
+            img{
+                width: 80px; 
+            }
+        }
+        .offcanvas-body{ 
+            background-color: $white;  
+            .nav_list{
+              ul{
+                padding: 0 20px;
+                li{
+                    padding:7px 0;
+                    cursor: pointer;
+                    position: relative;
+                    &:hover a{
+                       width: 100%;
+                    }
+                    &:hover .sub_down{
+                        top: 40px;
+                        opacity: 1;
+                        margin-top: 0;
+                        visibility: visible;
+                        padding: 10px 10px 10px 10px;
+                    }
+        
+                    a{
+                        font-size: 17px;
+                        font-weight: 500;
+                        color: black;
+                        .droppper{
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            color: $primaryColor;
+                        }
+                    }
+                    .sub_down{
+                        background-color: $white;
+                        border-radius: 10px;
+                        padding: 10px 10px 10px 10px;
+                        box-shadow: 1px 1.732px 20px 0px rgba(0,0,0,0.3);   
+                        -webkit-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                        position: absolute;
+                        visibility: hidden;
+                        display: block;
+                        width: 250px;
+                        border: none !important;
+                        opacity: 0;
+                        top: 70px;
+                        left: 0;
+                        padding: 0;
+                        z-index: 9999999;
+                      li{
+                           padding: 10px 10px;
+                           width: 100%;
+                           &:hover{
+                               background-color: $primaryColor;
+                               width: 100%;
+                           } 
+                           &:hover a{
+                            color: $white ; 
+                        } 
+                          a{
+                            font-size: 17px;
+                            font-weight: 500;
+                            color: black;
+                          }
+                      }
+                 }
+                }
+            }
+            }
+           
+        }
+    }
+}

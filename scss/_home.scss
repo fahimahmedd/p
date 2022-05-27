@@ -1,0 +1,26 @@
+.home{
+    padding: 20px 0 10px 0;
+    .liveTitle{
+        h4{
+            font-size: 25px;
+            color: $black;
+            font-weight: 600;
+            line-height: 34px;
+            font-family: $font-1;
+            padding: 10px 0;
+            span{
+                color: red;
+                padding-right: 4px;
+                animation: live infinite .9s;
+            }
+        }
+    }
+}
+@keyframes live{
+    0%, 100% {
+        filter: grayscale(0%);
+      }
+      50% {
+        filter: grayscale(100%);
+      }
+}
